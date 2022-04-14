@@ -8,7 +8,7 @@ import { Quote } from './quote';
 })
 export class QuoteComponent implements OnInit {
 
-  
+
 
   quotes: Quote[] = [
     new Quote(" The only language that looks the same before and after RSA encryption.", "Keith Bostic", "James Njoroge"),
@@ -16,25 +16,29 @@ export class QuoteComponent implements OnInit {
     new Quote(" Programming is like sex: one mistake and you\u2019re providing support for a lifetime.", "Dick Brandon", "James Njoroge"),
     new Quote(" I love deadlines. I like the whooshing sound they make as they fly by.", "Douglas Adams", "James Njoroge"),
     new Quote(" You should name a variable using the same care with which you name a first-born child.", "James O. Coplien", "James Njoroge"),
-   
+
   ]
 
-  upVote(index : any, bool : boolean){
-    if(bool===true){
-     this.quotes[index].un++
+  upVote(index: any, bool: boolean) {
+    if (bool === true) {
+      this.quotes[index].un++
     }
   }
 
-  downVote(index : any, bool : boolean){
-    if(bool===true){
+  downVote(index: any, bool: boolean) {
+    if (bool === true) {
       this.quotes[index].dn--
     }
+  }
+
+  toggleDetails(index: any) {
+    this.quotes[index].showDetails = !this.quotes[index].showDetails
   }
 
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 
 }

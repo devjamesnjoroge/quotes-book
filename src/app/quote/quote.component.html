@@ -14,8 +14,8 @@
 
             </div>
 
-            <span class="text-warning toggle ">Show More details</span>
-            <app-quote-details [quote]="quote"></app-quote-details>
+            <span class="text-warning toggle " (click)="toggleDetails(i)">Show More details</span>
+            <app-quote-details *ngIf="quote.showDetails" [quote]="quote"></app-quote-details>
         </div>
 
         <div class="col-md-3 gap-2 text-white rounded">
@@ -26,3 +26,10 @@
 
     </div>
 </div>
+
+<footer align="center" class="mt-5 ">
+    <p>Coded by
+        <a href="https://github.com/devjamesnjoroge " target="_blank ">James Njoroge</a> © 2022 ® | Challenge by
+        <a href="https://moringaschool.com " target="_blank ">Moringa school</a>
+    </p>
+</footer>
