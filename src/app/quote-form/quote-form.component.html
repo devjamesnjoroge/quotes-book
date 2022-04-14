@@ -1,1 +1,21 @@
-<p>quote-form works!</p>
+<form class="text-white">
+    <div id="closeForm">x</div>
+    <div class="form-group">
+        <label for="quote">Enter a Quote:</label>
+        <br>
+        <textarea name="quote" id="quote" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="author">Quote author id:</label>
+        <br>
+        <input type="text" name="author" id="author">
+    </div>
+    <div class="form-group">
+        <label for="publisher">Quote upladed by:</label>
+        <br>
+        <input type="text" name="publisher" id="publisher">
+    </div>
+
+    <button class="mt-3 btn btn-dark" type=" button " (click)="submitQuote()">Add Quote</button>
+
+</form>

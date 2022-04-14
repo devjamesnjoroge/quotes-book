@@ -39,3 +39,19 @@ footer {
     height: 80px;
     color: white;
 }
+
+app-quote-form {
+    position: absolute;
+    margin: auto;
+    top: 40vh;
+    background-color: black;
+    width: 50%;
+    transform: scale(0.7) translateX(40%) translateY(-20%);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:992px) {
+    app-quote-form {
+        width: 75%;
+    }
+}

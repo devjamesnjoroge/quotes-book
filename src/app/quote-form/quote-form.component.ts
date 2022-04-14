@@ -9,6 +9,10 @@ export class QuoteFormComponent implements OnInit {
 
   constructor() { }
 
+  submitQuote(){
+    event?.preventDefault();
+  }
+
   ngOnInit(): void {
   }
 
