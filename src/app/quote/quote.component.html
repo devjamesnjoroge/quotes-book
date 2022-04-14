@@ -1,21 +1,22 @@
 <div align="center" class="container">
     <h3 class="p-3">THE QOUTE-PEDIA-BOOK</h3>
-    <div class="row">
+    <div align="center" class=" row ">
 
-        <div class="col-md-4 gap-2 text-white rounded">
-            <div class="votes d-flex gap-3">
-                <div class="upvote">0 <img src="../../assets/upvote.svg" alt="upvote image"></div>
-                <div class="downvote">0 <img src="../../assets/downvote.svg" alt="downvote image"></div>
+        <div class="col-md-3 gap-2 text-white rounded " *ngFor="let quote of quotes ">
+            {{quote.quote}}
+            <div class="votes d-flex gap-3 ">
+                <div class="upvote ">0 <img src="../../assets/upvote.svg " alt="upvote image "></div>
+                <div class="downvote ">0 <img src="../../assets/downvote.svg " alt="downvote image "></div>
             </div>
 
-            <span class="text-warning toggle">Show More details</span>
+            <span class="text-warning toggle ">Show More details</span>
 
             <span>Uploaded by:</span>
 
         </div>
 
-        <div class="col-md-4 gap-2 text-white rounded">
-            <button class="btn btn-dark" type="button">Add Quote</button>
+        <div class="col-md-3 gap-2 text-white rounded ">
+            <button class="btn btn-dark " type="button ">Add Quote</button>
             <h5>DATE: NOW</h5>
             <h5>25/04/2022</h5>
         </div>

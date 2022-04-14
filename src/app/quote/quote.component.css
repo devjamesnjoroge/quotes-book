@@ -4,10 +4,11 @@
 }
 
 .row {
-    gap: 1.5rem;
+    gap: 4.5rem;
+    padding-left: 5%;
 }
 
-.col-md-4 {
+.col-md-3 {
     background: #3A1108D6;
     display: flex;
     flex-direction: column;
