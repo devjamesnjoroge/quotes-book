@@ -8,19 +8,17 @@
 
             <div class="votes d-flex gap-3 ">
 
-                <div class="upvote " (click)="upVote(i, true)">{{quote.un}}<img src="../../assets/upvote.svg " alt="upvote image "></div>
-                <div class="downvote " (click)="downVote(i, true)">{{quote.dn}}<img src="../../assets/downvote.svg " alt="downvote image "></div>
+                <div class="upvote " (click)="upVote(i, true)">{{quote.un}} <img src="../../assets/upvote.svg " alt="upvote image "></div>
+                <div class="downvote " (click)="downVote(i, true)">{{quote.dn * -1}} <img src="../../assets/downvote.svg " alt="downvote image "></div>
 
 
             </div>
 
             <span class="text-warning toggle ">Show More details</span>
-
-            <span>Uploaded by:</span>
-
+            <app-quote-details [quote]="quote"></app-quote-details>
         </div>
 
-        <div class="col-md-3 gap-2 text-white rounded ">
+        <div class="col-md-3 gap-2 text-white rounded">
             <button class="btn btn-dark " type="button ">Add Quote</button>
             <h5>DATE: NOW</h5>
             <h5>25/04/2022</h5>
