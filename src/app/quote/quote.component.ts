@@ -8,6 +8,8 @@ import { Quote } from './quote';
 })
 export class QuoteComponent implements OnInit {
 
+  
+
   quotes: Quote[] = [
     new Quote(" The only language that looks the same before and after RSA encryption.", "Keith Bostic", "James Njoroge"),
     new Quote(" Two things are infinite: the universe and human stupidity.", "Albert Einsten", "James Njoroge"),
@@ -17,9 +19,22 @@ export class QuoteComponent implements OnInit {
    
   ]
 
+  upVote(index : any, bool : boolean){
+    if(bool===true){
+     this.quotes[index].un++
+    }
+  }
+
+  downVote(index : any, bool : boolean){
+    if(bool===true){
+      this.quotes[index].dn--
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
