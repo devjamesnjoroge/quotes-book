@@ -35,17 +35,21 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails
   }
 
-  log(x : any){
+  log(x: any) {
     console.log(x)
   }
 
- 
+  pushNewQuote(addNewQuote: Quote) {
+    this.quotes.push(addNewQuote)
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {
 
-    
-  
+
+
 
   }
 

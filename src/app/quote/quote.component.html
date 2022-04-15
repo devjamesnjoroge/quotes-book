@@ -26,7 +26,9 @@
         </div>
 
     </div>
-    <app-quote-form></app-quote-form>
+    <div class="form-wrapper">
+        <app-quote-form (addNewQuote)="pushNewQuote($event)"></app-quote-form>
+    </div>
 </div>
 
 

@@ -1,21 +1,13 @@
     form {
-        padding: 10% 5%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         position: relative;
+        background-color: #3A1108D6;
         border-radius: 10px;
-    }
-    
-    #closeForm {
-        position: absolute;
-        margin-top: -60vh;
-        margin-left: 45vw;
-        cursor: pointer;
-        padding: 0 2px;
-        border: 1px solid white;
+        padding: 5vh 0;
     }
     
     textarea {
