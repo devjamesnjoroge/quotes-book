@@ -22,4 +22,6 @@
      Add Quote
     </button>
 
+    <button *ngIf="quote.invalid || author.invalid || publisher.invalid" type="button" class="disabled mt-3 btn btn-dark">Add Quote</button>
+
 </form>
