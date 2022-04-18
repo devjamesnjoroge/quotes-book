@@ -20,13 +20,13 @@
         </div>
 
         <div class="col-md-3 gap-2 text-white rounded">
-            <button class="btn btn-dark " type="button ">Add Quote</button>
+            <a href="#add"> <button class="btn btn-dark " type="button ">Add Quote</button></a>
             <h5>DATE: NOW</h5>
             <h5>{{quotes[1].date | date | lowercase}}</h5>
         </div>
 
     </div>
-    <div class="form-wrapper">
+    <div class="form-wrapper" id="add">
         <app-quote-form (addNewQuote)="pushNewQuote($event)"></app-quote-form>
     </div>
 </div>
