@@ -43,6 +43,14 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(addNewQuote)
   }
 
+  deleteQuote(addNewEvent: any, index: any) {
+    if (addNewEvent === true) {
+
+      this.quotes.splice(index, 1)
+
+    }
+  }
+
 
   constructor() { }
 

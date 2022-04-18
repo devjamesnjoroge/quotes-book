@@ -2,4 +2,5 @@
     <strong>{{quote.author}}</strong> <br>
     <span>Uploaded by: {{quote.uploader}}</span>
     <h6>Time passed: {{quote.date | date | lowercase}}</h6>
+    <button class="btn btn-dark" type="button" (click)="addEvent(true)">Delete quote</button>
 </div>

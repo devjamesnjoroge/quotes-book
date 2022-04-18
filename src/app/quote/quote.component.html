@@ -15,7 +15,7 @@
             </div>
 
             <span class="text-warning toggle " (click)="toggleDetails(i)">Show More details</span>
-            <app-quote-details *ngIf="quote.showDetails" [quote]="quote"></app-quote-details>
+            <app-quote-details (addNewEvent)="deleteQuote($event, i)" *ngIf="quote.showDetails" [quote]="quote"></app-quote-details>
 
         </div>
 
