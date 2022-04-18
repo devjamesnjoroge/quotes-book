@@ -6,7 +6,7 @@
         <div *ngIf="quote.touched && quote.invalid" class="alert alert-danger">Quote is a required field</div>
     </div>
     <div class="form-group ">
-        <label for="author ">Quote author id:</label>
+        <label for="author ">Quote author by:</label>
         <br>
         <input #author="ngModel" ngModel type="text " name="author " id="author " required>
         <div *ngIf="author.touched && author.invalid" class="alert alert-danger mt-1">Author is a required field</div>
